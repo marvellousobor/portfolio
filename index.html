@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvellous Obor — Software Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Your Name — software engineer building modern, performant web experiences with JavaScript, HTML, CSS, and the cloud." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Animated glow background -->
+  <div class="glow-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Sticky glass nav -->
+  <header class="nav-wrap" id="navWrap">
+    <nav class="nav glass-strong">
+      <a href="#hero" class="brand"><span class="gradient-text">Marvellous Obor</span><span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-link>About</a></li>
+        <li><a href="#projects" data-link>Projects</a></li>
+        <li><a href="#skills" data-link>Skills</a></li>
+        <li><a href="#experience" data-link>Experience</a></li>
+        <li><a href="#blog" data-link>Blog</a></li>
+        <li><a href="#contact" data-link>Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Hire me</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+    </nav>
+    <div class="mobile-drawer glass-strong" id="mobileDrawer">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary">Hire me</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy fade-up">
+          <div class="badge glass">
+            <span class="spark"></span> Software Engineer — Available for new opportunities
+          </div>
+          <h1 class="display"><span class="gradient-text glow-text">Marvellous Obor</span></h1>
+          <p class="role">I am a <strong class="gradient-text">Software Engineer</strong></p>
+          <p class="tagline">I build <span id="typewriter" class="gradient-text"></span><span class="caret"></span></p>
+          <p class="lede">
+            Software engineer crafting modern, performant web experiences with JavaScript,
+            HTML, CSS, and the cloud. Obsessed with clean code, thoughtful design, and the
+            small details that make products feel alive.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects →</a>
+            <a href="#contact" class="btn btn-ghost glass">Get in Touch</a>
+          </div>
+          <div class="socials">
+            <a href="http://marvellousobor.github.io/marvellous-portfolio" target="_blank" rel="noreferrer"
+              class="icon glass" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.3-3.3-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.3 1.3a11 11 0 0 1 6 0c2.3-1.6 3.3-1.3 3.3-1.3.7 1.7.2 3 .1 3.3.8.9 1.3 2 1.3 3.3 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/marvellous-obor-2769aa376" target="_blank" rel="noreferrer"
+              class="icon glass" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.3V21h-4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z" />
+              </svg>
+            </a>
+            <a href="mailto:marvellousobor@gmail.com" class="icon glass" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="orb-wrap">
+          <div class="orb-glow"></div>
+          <div class="orb glass-strong float">
+            <div class="orb-inner"></div>
+            <div class="orb-spark spark-1"></div>
+            <div class="orb-spark spark-2"></div>
+            <div class="orb-symbol gradient-text">&lt;/&gt;</div>
+          </div>
+          <div class="orbit">
+            <div class="dot d1"></div>
+            <div class="dot d2"></div>
+            <div class="dot d3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">About</p>
+          <h2 class="h2 gradient-text">A bit about me</h2>
+        </div>
+        <div class="about-grid">
+          <article class="glass-strong card-lg reveal">
+            <p>
+              I'm a software engineer with a deep love for building products that feel as good as
+              they look. My focus is full-stack JavaScript — modern frontends on the web,
+              Node and serverless on the back — with a healthy obsession for performance,
+              accessibility, and beautiful interaction design.
+            </p>
+            <p>
+              When I'm not shipping, you'll find me contributing to open source, exploring new
+              AI tooling, or planning solution design with my PC/notebook. I believe great software is a
+              craft — and the small details are where the magic lives.
+            </p>
+            <div class="tags">
+              <span class="tag">Ondo, NIG</span>
+              <span class="tag">Open to remote</span>
+              <span class="tag">Fluent EN</span>
+            </div>
+          </article>
+          <div class="stats">
+            <div class="glass stat reveal">
+              <div class="stat-val gradient-text">1+</div>
+              <div class="stat-label">Years experience</div>
+            </div>
+            <div class="glass stat reveal">
+              <div class="stat-val gradient-text">2+</div>
+              <div class="stat-label">Projects shipped</div>
+            </div>
+            <div class="glass stat reveal">
+              <div class="stat-val gradient-text">2+</div>
+              <div class="stat-label">Happy clients</div>
+            </div>
+            <div class="glass stat reveal">
+              <div class="stat-val gradient-text">∞</div>
+              <div class="stat-label">Cups of coffee</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 class="h2 gradient-text">Selected work</h2>
+        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 class="h2 gradient-text">Tools I love</h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 class="h2 gradient-text">Where I've worked</h2>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">Blog</p>
+          <h2 class="h2 gradient-text">Recent writing</h2>
+        </div>
+        <div class="blog-grid" id="blogGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="glass-strong contact-card reveal">
+          <p class="eyebrow center">Contact</p>
+          <h2 class="h2 gradient-text center">Let's build something</h2>
+          <p class="lede center">
+            Got a project, role, or idea you'd like to chat about? Drop me a line.
+          </p>
+          <div class="contact-actions">
+            <a href="mailto:marvellousobor@gmail.com" class="btn btn-primary">marvellousobor@gmail.com</a>
+            <div class="socials center">
+              <a href="https://github.com" target="_blank" rel="noreferrer" class="icon glass" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.3-3.3-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.3 1.3a11 11 0 0 1 6 0c2.3-1.6 3.3-1.3 3.3-1.3.7 1.7.2 3 .1 3.3.8.9 1.3 2 1.3 3.3 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z" />
+                </svg>
+              </a>
+              <a href="http://marvellousobor.github.io/marvellous-portfolio" target="_blank" rel="noreferrer"
+                class="icon glass" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.7 5 6.3V21h-4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z" />
+                </svg>
+              </a>
+              <a href="" target="_blank" rel="noreferrer" class="icon glass" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M18.9 2H22l-7.5 8.6L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8-9.2L1 2h7l4.8 6.3L18.9 2zm-2.4 18h1.9L7.6 4H5.6l10.9 16z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Marvellous Obor. Crafted with care.</span>
+      <span class="muted">Built with HTML, CSS & JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
