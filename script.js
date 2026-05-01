@@ -22,7 +22,7 @@ const projects = [
     icon: "BLADE",
     desc: "A blog website design for historic information",
     stack: ["HTML/CSS"],
-    demo: "#",
+    demo: "https://marvellousobor.github.io/blog-design/",
     code: "https://github.com/marvellousobor/Blog-website-design",
   },
   {
